@@ -12,8 +12,8 @@
     "BLUETOOTH_ADVERTISE"
   ],
   "entry": "com.abyss.tools.plugin.disguise.DisguisePlugin",
-  "repo": "Ultra-Guru/abyss-plugin-disguise",
-  "patchChannel": "https://raw.githubusercontent.com/Ultra-Guru/abyss-plugin-disguise/main/patches/index.json",
+  "repo": "abyss-tool/abyss-plugin-disguise",
+  "patchChannel": "https://raw.githubusercontent.com/abyss-tool/abyss-plugin-disguise/main/patches/index.json",
   "roadmap": [
     "v0.2 机型与构建指纹伪装",
     "v0.3 定位 / 电量伪造",
