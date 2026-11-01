@@ -4,7 +4,7 @@
 
 ### 机型 / 定位 / 电量 / 信号伪装：沙箱 Hook 层返回伪造数据 + 蓝牙 HID 广播伪装。
 
-[![Plugin CI](https://github.com/Ultra-Guru/abyss-plugin-disguise/actions/workflows/plugin-ci.yml/badge.svg?branch=main)](https://github.com/Ultra-Guru/abyss-plugin-disguise/actions/workflows/plugin-ci.yml)
+[![Plugin CI](https://github.com/abyss-tool/abyss-plugin-disguise/actions/workflows/plugin-ci.yml/badge.svg?branch=main)](https://github.com/abyss-tool/abyss-plugin-disguise/actions/workflows/plugin-ci.yml)
 ![Version](https://img.shields.io/badge/version-0.1.0-7EC8FF)
 ![Category](https://img.shields.io/badge/分类-伪装-4FD8EB)
 ![Status](https://img.shields.io/badge/状态-框架预览-1A222D)
@@ -13,7 +13,7 @@
 
 ---
 
-> 深渊工具（[Ultra-Guru/Abyss-Tools](https://github.com/Ultra-Guru/Abyss-Tools)）的伪装类大插件 —— 本仓库为**插件框架期骨架**：manifest / 补丁通道 / CI 门禁已就绪，插件本体按路线图实现。
+> 深渊工具（[abyss-tool/Abyss-Tools](https://github.com/abyss-tool/Abyss-Tools)）的伪装类大插件 —— 本仓库为**插件框架期骨架**：manifest / 补丁通道 / CI 门禁已就绪，插件本体按路线图实现。
 
 ## 插件信息
 
@@ -23,7 +23,7 @@
 | 分类 | 伪装（disguise） |
 | 版本 | v0.1.0（框架预览） |
 | 最低宿主 | App v0.1.0 / HOST_API v1 |
-| 仓库 | [Ultra-Guru/abyss-plugin-disguise](https://github.com/Ultra-Guru/abyss-plugin-disguise) |
+| 仓库 | [abyss-tool/abyss-plugin-disguise](https://github.com/abyss-tool/abyss-plugin-disguise) |
 | 补丁通道 | [`patches/index.json`](patches/index.json) |
 
 ## 权限需求
@@ -63,4 +63,4 @@ SHA-256 校验 → 安装网关）。**APK 资产自 v0.2 发布流水线起发�
 1. **Actions → Patch Release → Run workflow**：填目标版本（如 `0.1.1`）与变更要点（多条用 `;` 分隔）；
 2. 流水线自动：打包增量补丁（`tools/make_patch.py` —— 新 manifest 与 changelog 作为载荷，`plugin.json` / `CHANGELOG.md` 同步升版）→ 创建 `v*` Release 并上传 zip 资产（`tools/publish_patch.py`）→ 滚动 `patches/index.json` 补丁通道；
 3. 宿主侧插件详情页「下载并应用补丁」即可增量消费：下载 → SHA-256 校验 → 备份 → 应用 → 失败自动回滚；
-4. [Abyss-Plugins](https://github.com/Ultra-Guru/Abyss-Plugins) 索引聚合（每日 / 手动 Sync Index）自动把新版本汇入 `plugins.json`。
+4. [Abyss-Plugins](https://github.com/abyss-tool/Abyss-Plugins) 索引聚合（每日 / 手动 Sync Index）自动把新版本汇入 `plugins.json`。
