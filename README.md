@@ -1,3 +1,20 @@
+> [!IMPORTANT]
+> **本仓库已并入深渊工具主壳（v0.3.0 伪装四件套内置化，仓库随即可归档）**
+>
+> 伪装四件套（机型 / 电量 / 信号 / 定位）按「小功能内置，大功能插件化」的分界纪律，
+> 已改为直接实现进主仓库 [abyss-tool/Abyss-Tools](https://github.com/abyss-tool/Abyss-Tools)
+> （`ToolStatus.BUILT_IN`，`feature:disguise` + `core:shell` 模块），随 App 版本更新获得 ——
+> 不再需要安装本插件，且全部引擎经 Shizuku 免 Root 实时生效：
+> - 🔋 电量伪装：`dumpsys battery` 引擎（全系统生效）
+> - 📍 定位伪装：Fake GPS 官方通道（mock_location + 三源注入 + 微漂移）
+> - 📶 信号伪装：`cmd connectivity` / `svc` 真实连接性开关
+> - 📱 机型伪装：系统设备名改写 + 十款旗舰档案库（沙箱 Hook 层消费）
+>
+> 主壳内的入口：导航 → 伪装与隐私 → 对应工具（真实功能页）。
+>
+> 本仓库保留为历史存档（只读）：补丁通道与 manifest 仍可访问，但不再
+> 发布新版本。深渊工具 v0.3.0 及以上版本的用户请直接更新主壳。
+
 <div align="center">
 
 # 🎭 设备伪装
